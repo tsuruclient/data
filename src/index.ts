@@ -1,4 +1,4 @@
-import {EventProperties, IEvent} from './Event';
+import {IEvent, EventProperties} from './Event';
 import {IReaction, ReactionProperties} from './Reaction';
 import {IReplyTo, ReplyToProperties} from './ReplyTo';
 import {IStatus, StatusProperties} from './Status';

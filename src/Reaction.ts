@@ -4,12 +4,12 @@ export enum ReactionProperties {
     id = 'id',
     name = 'name',
     reacted = 'reacted',
-    reactionAmout = 'reactionAmout',
+    reactionAmounts = 'reactionAmounts',
 }
 
 export interface IReaction {
-    [ReactionProperties.id]?: string;
+    [ReactionProperties.id]: string;
     [ReactionProperties.name]: string;
     [ReactionProperties.reacted]: boolean;
-    [ReactionProperties.reactionAmout]: number;
+    [ReactionProperties.reactionAmounts]: number;
 }
