@@ -1,6 +1,9 @@
 import {IStatus} from './Status';
+import {ArticleType, EventType} from "./Enum";
+import {IUser} from "../User";
 
 export enum EventProperties {
+    type = 'type',
     id = 'id',
     eventName = 'eventName',
     sourceUser = 'sourceUser',
@@ -8,8 +11,9 @@ export enum EventProperties {
 }
 
 export interface IEvent {
+    [EventProperties.type]: ArticleType.event;
     [EventProperties.id]: string;
-    [EventProperties.eventName]: string; // e.g. 'Liked', 'Favourite', 'Followed'.
-    [EventProperties.sourceUser]: string;
+    [EventProperties.eventName]: EventType;
+    [EventProperties.sourceUser]: IUser;
     [EventProperties.target]?: IStatus;
 }
