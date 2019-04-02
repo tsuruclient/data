@@ -1,4 +1,4 @@
-[
+export const scopes: string[] = [
     "channels:history",
     "channels:read",
     "channels:write",
@@ -35,4 +35,8 @@
     "users.profile:read",
     "users.profile:write",
     "team:read"
-]
+];
+
+export const space_separeted_scopes: string =
+    scopes.reduce((accm: string, curr: string): string => (accm + " " + curr), "")
+        .trim();
