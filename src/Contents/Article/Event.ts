@@ -14,6 +14,6 @@ export interface IEvent {
     [EventProperties.type]: ArticleType.event;
     [EventProperties.id]: string;
     [EventProperties.eventName]: EventType;
-    [EventProperties.sourceUser]: IUser;
+    [EventProperties.sourceUser]: IUser[];
     [EventProperties.target]?: IStatus;
 }
