@@ -1,12 +1,20 @@
 {
   "name": "tsuru-data",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "repository": "git@github.com:tsuruclient/data.git",
   "author": "ONOUE Origami <onoueorigami@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
   "devDependencies": {
     "tslint": "^5.11.0",
-    "typescript": "^3.2.1"
+    "typescript": "^3.2.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "ts-loader": "^5.3.3"
   }
 }
