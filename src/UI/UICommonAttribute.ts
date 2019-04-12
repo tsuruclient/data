@@ -1,4 +1,4 @@
-export interface IActionAttr {
+export interface IUICommonAttribuite {
     account: string,
     column: string,
 }

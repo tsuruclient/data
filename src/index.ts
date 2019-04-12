@@ -4,5 +4,5 @@ export * from './Contents/Article/Event';
 export * from './Contents/Reaction';
 export * from './Contents/ReplyTo';
 export * from './Contents/User';
-export * from './Attr'
-export * from './UIAction'
+export * from './UI/UICommonAttribute'
+export * from './UI/UIAction'
