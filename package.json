@@ -1,9 +1,10 @@
 {
   "name": "tsuru-data",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "dist/dist.js",
+  "typings": "dist/typings/index.d.ts",
   "private": false,
-  "repository": "git@github.com:tsuruclient/data.git",
+  "repository": "https://github.com/tsuruclient/data",
   "author": "ONOUE Origami <onoueorigami@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -12,7 +13,6 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "@typescript-eslint/parser": "^1.6.0",
-    "declaration-bundler-webpack-plugin": "^1.0.3",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-import": "^2.16.0",
