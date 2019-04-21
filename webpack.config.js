@@ -1,7 +1,7 @@
 module.exports = {
     mode: "production",
     output: {
-        library: '@tsuru/data',
+        library: '@tsuruclient/datatype',
         libraryTarget: 'umd',
         filename: 'dist.js',
     },
