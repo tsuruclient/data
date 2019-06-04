@@ -1,10 +1,10 @@
 import {IReaction} from '../Reaction';
 import {IReplyTo} from '../ReplyTo';
 import {IUser} from '../User';
-import {ArticleType} from "./Enum";
+import {Article} from "./Article";
 
 export enum StatusProperties {
-    type = 'type',
+    article = 'article',
     id = 'id',
     user = 'user',
     date = 'date',
@@ -16,7 +16,7 @@ export enum StatusProperties {
 }
 
 export interface IStatus {
-    [StatusProperties.type]: ArticleType.status;
+    [StatusProperties.article]: Article;
     [StatusProperties.id]: string;
     [StatusProperties.user]: IUser;
     [StatusProperties.date]: string;
